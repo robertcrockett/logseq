@@ -16,7 +16,7 @@ jobs:
       - name: Export Dependabot alerts
         uses: ambilykk/dependabot-alert-export@v1.0
         with:        
-          GITHUB_TOKEN: ${{secrets.GH_TOKEN}}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           org_name: 'ORG_NAME'
           repo_name: 'REPO_NAME'
           csv_path: data/vulnerability.csv

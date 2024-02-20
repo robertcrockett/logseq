@@ -16,7 +16,7 @@ jobs:
       - name: Export Dependabot alerts
         uses: robertcrockett/dependabot-alert-export@v2
         with:        
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          GITHUB_TOKEN: ${{secrets.PAT_TOKEN}}
           org_name: 'robertcrockett'
           repo_name: 'logseq'
           csv_path: data/vulnerability.csv
